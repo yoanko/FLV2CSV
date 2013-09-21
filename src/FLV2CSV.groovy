@@ -80,7 +80,7 @@ import java.awt.event.WindowListener
     
 gTabbedPane = null
 gTextArea = null
-gTable = null
+JTable gTable = null
 gTableModel = null
 
 @XmlType
@@ -167,6 +167,7 @@ new SwingBuilder().edt {
 			}
 			scrollPane(title:"tabular data") {
 				gTable = table() {}
+				gTable.setShowGrid(true)
 			}
 		}
 	}
